@@ -5,9 +5,9 @@
     background-color: #fff;
     width: 100vw;
 }
-/* .header-content {
+.header-content {
     padding-right: 15px;
-} */
+}
 .header-contact {
     display: flex;
     justify-content: center;

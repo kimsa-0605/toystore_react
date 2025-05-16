@@ -1,0 +1,137 @@
+/* Map contact section */
+.map-conatact-container {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.map-contact {
+    width: 1175px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 58px 0px 120px 0px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+}
+.may-contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 80px;
+}
+.message-contact-infor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20%;
+    .tittle {
+        margin-bottom: 28px;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 24px;
+    }
+    input {  
+        width: 100%;
+        margin-bottom: 24px;
+        padding-right: 28px;
+        padding: 12px 12px;
+        padding-left: 28px;
+        border: 2px solid #e5e5e5;
+        border-radius: 24px;
+        background-color: #f8f8f8;
+    }
+    input::placeholder {
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #3333337a;
+    }
+    .input-title {
+        margin-bottom: 8px;
+        color: #111;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    
+}
+.send-message-button {
+  background-color: #b5d42c;
+  padding: 12px 24px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.send-message-button:hover {
+  background-color: #9fb926;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 28px;
+  height: 150px;
+  border: 2px solid #e5e5e5;
+  border-radius: 24px;
+  background-color: #f8f8f8;
+  resize: vertical;
+  margin-bottom: 24px;
+}
+
+textarea::placeholder {
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #3333337a;
+}
+.contact-infor-layout {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  margin-top: 24px;
+}
+
+.contact-infor-layout .tittle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.contact-infor-content .text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.contact-infor-content .email {
+  font-weight: 500;
+  color: #555;
+}
+
+.follow-us-text {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #222;
+}
+
+.contact-infor-icon {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+  font-size: 22px;
+}
+
+.contact-infor-icon i {
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.contact-infor-icon i:hover {
+  color: #b5d42c;
+}
+
+/* End map conatact section */
