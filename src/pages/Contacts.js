@@ -7,7 +7,7 @@ import './Contacts.css';
 const Contact = () => {
   const pages = [
     { name: "Home", url: "/" },
-    { name: "Catalog", url: "/catalog" },
+    { name: "Contacts", url: "/contacts" },
   ];
 
   return (
@@ -70,7 +70,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-
         <InstagramSection />
         <SubscribeSection />
       </div>

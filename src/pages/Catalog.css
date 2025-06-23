@@ -106,4 +106,7 @@
         }
     }
 }
+.product-card-link {
+    text-decoration: none;
+}
 /* End product section */

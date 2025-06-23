@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import BreadcrumbNav from "../components/ui/BreadcrumbNav/BreadcrumbNav";
 import SubscribeSection from "../components/ui/SubscribeSection/SubscribeSection";
 import InstagramSection from "../components/ui/InstagramSection/InstagramSection";
 import ProductCard from "../components/ui/ProductCard/ProductCard";
+import { Link } from "react-router-dom";
 import './Catalog.css';
 
 function Catalog() {
@@ -11,32 +12,16 @@ function Catalog() {
     { name: "Catalog", url: "/catalog" },
   ];
 
-  const products = [
-    {
-      imgSrc: "https://cdn.prod.website-files.com/5baddb6a35e113da0e9a4802/5bae12942ca03553bf0d536c_33903-2-plush-toy-transparent-image-min-p-500.png",
-      altText: "Teddy Bear",
-      title: "Teddy Bear",
-      price: "$30.00 USD",
-    },
-    {
-      imgSrc: "https://cdn.prod.website-files.com/5baddb6a35e113da0e9a4802/5baf529c7a16ad5b5fd9fdf3_33727-9-wooden-toy-transparent-image-min-p-500.png",
-      altText: "Happy Flower",
-      title: "Happy Flower",
-      price: "$38.00 USD",
-    },
-    {
-      imgSrc: "https://cdn.prod.website-files.com/5baddb6a35e113da0e9a4802/5bae124e03ef144f2b4a9bef_33837-2-plush-toy-transparent-background-min.png",
-      altText: "Mega Plush Toy",
-      title: "Mega Plush Toy",
-      price: "$38.00 USD",
-    },
-    {
-      imgSrc: "https://cdn.prod.website-files.com/5baddb6a35e113da0e9a4802/5baf525bbf02340f30398cb3_33505-6-wooden-toy-clipart-min-p-500.png",
-      altText: "Lift Machine",
-      title: "Lift Machine",
-      price: "$24.00 USD",
-    },
-  ];
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch("https://68395bb46561b8d882b012b7.mockapi.io/api/products")
+      .then(res => res.json())
+      .then(data => {
+        setProducts(data);
+      })
+      .catch(console.error);
+  }, []);
 
   return (
     <div className="container">
@@ -65,14 +50,15 @@ function Catalog() {
                 </div>
               </div>
               <div className="product-list">
-                {products.map((product, index) => (
-                  <ProductCard
-                    key={index}
-                    imgSrc={product.imgSrc}
-                    altText={product.altText}
-                    title={product.title}
-                    price={product.price}
-                  />
+                {products.map((product) => (
+                  <Link to={`/product/${product.id}`} key={product.id} className="product-card-link">
+                    <ProductCard
+                      imgSrc={product.image_link}
+                      altText={product.product_name}
+                      title={product.product_name}
+                      price={`$${product.price}.00 USD`}
+                    />
+                  </Link>
                 ))}
               </div>
             </div>

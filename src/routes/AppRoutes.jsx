@@ -4,6 +4,7 @@ import Delivery from '../pages/Delivery';
 import Catalog from '../pages/Catalog';
 import About from '../pages/About';
 import Contacts from '../pages/Contacts';
+import ProductDetail from "../pages/ProductDetail";
 import {
     BrowserRouter as Router,
     Routes,
@@ -11,11 +12,12 @@ import {
 } from 'react-router-dom';
 
 const routes = [
-    {path: '/', element: <Home/> },
-    {path: '/delivery', element: <Delivery/> },
-    {path: '/catalog', element: <Catalog/> },
-    {path: '/about', element: <About/> },
-    {path: '/contacts', element: <Contacts/> },
+    { path: '/', element: <Home /> },
+    { path: '/delivery', element: <Delivery /> },
+    { path: '/catalog', element: <Catalog /> },
+    { path: '/about', element: <About /> },
+    { path: '/contacts', element: <Contacts /> },
+    { path: '/product/:id', element: <ProductDetail /> }, 
 ];
 
 export function AppRoutes() {
