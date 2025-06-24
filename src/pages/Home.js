@@ -76,26 +76,26 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="product-section-container">
+        <div className="product-section-home-container">
           <div className="product-section-content">
             <div className="stuffed-animal-toys">
               <div className="stuffed-animal-toys-header">
                 <div className="stuffed-animal-toys-header-content">
-                  <span className="section-title">Stuffed Animals</span>
+                  <span className="section-title-home">Stuffed Animals</span>
                   <Link to="/catalog" className="see-all-toys">
                     <span className="see-all-toys-title">See All Toys</span>
                     <i className="fa-solid fa-right-long"></i>
                   </Link>
                 </div>
                 <div className="toys-line-header">
-                  <div className="toys-line-header-color"></div>
+                  <div className="toys-line-header-color-home"></div>
                 </div>
               </div>
 
               <div className="product-list">
                 {stuffedAnimals.map(product => (
                   <Link to={`/product/${product.id}`} key={product.id} className="product-card-link">
-                    <div className="product-card">
+                    <div className="product-card-home">
                       <div className="product-card-content">
                         <img
                           src={product.image_link}
@@ -111,17 +111,17 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="wood-crafted-toys">
+            {/* <div className="wood-crafted-toys">
               <div className="wood-crafted-toys-header">
                 <div className="wood-crafted-toys-header-content">
-                  <span className="section-title">Wooden Toys</span>
+                  <span className="section-title-home">Wooden Toys</span>
                   <Link to="/catalog" className="see-all-toys">
                     <span className="see-all-toys-title">See All Toys</span>
                     <i className="fa-solid fa-right-long"></i>
                   </Link>
                 </div>
                 <div className="toys-line-header">
-                  <div className="toys-line-header-color"></div>
+                  <div className="toys-line-header-color-home"></div>
                 </div>
               </div>
 
@@ -142,14 +142,14 @@ const Home = () => {
                   </Link>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
-        <VideoSection />
+        {/* <VideoSection />
         <EcommerceTemplate title="Available for FREE!" textBtn="Get It Now" />
         <SubscribeSection />
-        <InstagramSection />
+        <InstagramSection /> */}
       </div>
     </div>
   );

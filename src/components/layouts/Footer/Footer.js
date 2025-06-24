@@ -28,7 +28,7 @@ const Footer = () => {
               <hr />
               <div className="bottom-footer-tag-name">
                   <div className="left-bottom-footer-content">
-                      Created with love by <u>Elastic Themes</u>
+                      Created with love by <u>Kim Sa</u>
                   </div>
                   <div className="right-bottom-footer-content">
                       <p>Powered by <u>Webflow</u></p>
