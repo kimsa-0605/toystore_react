@@ -18,7 +18,7 @@
         text-align: center;
         .all-you-need-fun {
             margin-bottom: 16px;
-            color: #a5c926;
+            color: #FF9191;
             font-size: 13px;
             line-height: 16px;
             font-weight: 600;
@@ -48,7 +48,7 @@
             transition: all 0.3s 0s ease-in-out;
         }
         .about-link:hover {
-            border-bottom: 2px solid #a5c926;
+            border-bottom: 2px solid #FF9191;
             transition: all 0.3s 0s ease-in-out;
         }
     }
@@ -76,7 +76,7 @@
     .made-for-webflow-title {
         font-size: 13px;
         font-weight: 600;
-        color: #a5c926;
+        color: #FF9191;
     }
     .position-design-title {
         font-family: 'Varela Round', sans-serif;
@@ -102,7 +102,7 @@
     .line-position-design {
         width: 70px;
         height: 2px;
-        background-color: #a5c926;
+        background-color: #FF9191;
     }
     .position-design-text {
         color: #999;
@@ -129,7 +129,58 @@
     transition: all 0.3s 0s ease-in-out;
 }
 .catelog-link:hover {
-    border-bottom: 2px solid #a5c926;
+    border-bottom: 2px solid #FF9191;
     transition: all 0.3s 0s ease-in-out;
 }
 /*  */
+
+/* ---------------- MOBILE: max-width 600px ---------------- */
+@media (max-width: 600px) {
+  .introducing-toy-content {
+    width: 90vw;
+  }
+
+  .introducing-main-content {
+    & .title-text {
+        .introducing-toy-text {
+            font-size: 7vw;
+        }
+    }
+  }
+
+  .position-design-photo {
+    width: 90vw;
+    height: auto;
+    object-fit: cover;    
+  }
+
+  .available-for-free-content {
+    width: 90vw;
+ }
+
+}
+
+/* ---------------- TABLET: 601px–1024px ---------------- */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .introducing-toy-content {
+    width: 90vw;
+  }
+
+  .introducing-main-content {
+    & .title-text {
+        .introducing-toy-text {
+            font-size: 7vw;
+        }
+    }
+  }
+
+  .position-design-photo {
+    width: 90vw;
+    height: auto;
+    object-fit: cover;    
+  }
+
+  .available-for-free-content {
+    width: 90vw;
+ }
+}

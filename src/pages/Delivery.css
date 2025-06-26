@@ -61,7 +61,7 @@
         .btn-call-to-contact-us {
             padding: 10px 24px;
             border-radius: 24px;
-            background-color: #a5c926;
+            background-color: #FF9191;
             color: #fff;
             font-size: 14px;
             line-height: 24px;
@@ -74,7 +74,7 @@
             transition: all 0.3s 0s ease-in-out;
         }
         .btn-call-to-contact-us:hover {
-            box-shadow: 0 8px 8px -4px rgba(165, 201, 38, 0.5);
+            box-shadow: 0 8px 8px -4px #FF9191A8;
             transform: scale(1.05);
             transition: all 0.3s 0s ease-in-out;
         }
@@ -82,3 +82,27 @@
     }
 }
 /* End delivery section */
+
+/* ---------------- MOBILE: max-width 600px ---------------- */
+@media (max-width: 600px) {
+   .call-to-contact-us {
+        display: none;
+    }
+
+    .delivery-infor-content {
+        display: flex;
+        padding: 5vw;
+    }
+}
+
+/* ---------------- TABLET: 601px–1024px ---------------- */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .call-to-contact-us {
+        display: none;
+    }
+
+    .delivery-infor-content {
+        display: flex;
+        padding: 5vw;
+    }
+}

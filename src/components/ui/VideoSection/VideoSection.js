@@ -4,7 +4,7 @@ import './VideoSection.css';
 const VideoSection = () => {
     return (
         <div id="video-section-container" class="video-section-container">
-            <div id="video-section-container" className="video-section-content">
+            <div id="video-section-container" className="video-section-content" data-aos="zoom-in" data-aos-duration="1000">
                 <p className="about-shop-title">About The Shop</p>
                 <p className="watch-our-story">Watch Our Story</p>
                 <p className="about-shop-title">

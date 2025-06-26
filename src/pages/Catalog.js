@@ -45,7 +45,7 @@ function Catalog() {
                     </a>
                   </span>
                 </div>
-                <div className="toys-line-header">
+                <div className="toys-line-header-catalog">
                   <div className="toys-line-header-color" />
                 </div>
               </div>

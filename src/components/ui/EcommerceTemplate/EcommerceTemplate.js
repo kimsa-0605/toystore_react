@@ -26,6 +26,7 @@ const EcommerceTemplate = ({ title, textBtn }) => {
                         className="free-marketing-photo"
                         src="https://assets.website-files.com/5badda2935e11303a89a461e/5bb5c77ee73150e2021b0db4_side-image-01-p-1080.jpeg"
                         alt="Ecommerce Template"
+                        data-aos="zoom-in" data-aos-duration="1000"
                     />
                 </div>
             </div>

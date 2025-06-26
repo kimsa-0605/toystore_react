@@ -1,18 +1,18 @@
    /* Card product detail */
-   .container-product-detail {
+.container-product-detail {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    .price {
-        color: #A5C926;
-        font-size: 24px;
-        line-height: 32px;
-        font-weight: 400;
-    }
-    p {
-        font-size: 20px;
-    }
+}
+.price {
+  color: #FF9191;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.stock {
+  font-size: 20px;
 }
 .product-detail-content {
     background: white;
@@ -67,7 +67,7 @@
 }
 .quantity-group {
     display: flex;
-    border: 2px solid #A5C926;
+    border: 2px solid #FF9191;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -83,8 +83,8 @@
 }
 .quantity-group input {
     text-align: center;
-    border-left: 2px solid #A5C926;
-    border-right: 2px solid #A5C926;
+    border-left: 2px solid #FF9191;
+    border-right: 2px solid #FF9191;
     outline: none;
 }
 .add-to-cart {
@@ -93,7 +93,7 @@
     padding: 5px 20px;
     font-size: 14px;
     border: 1px solid #ccc;
-    background:  #A5C926;
+    background:  #FF9191;
     cursor: pointer;
     border-radius: 40px;
     color: white;
@@ -102,9 +102,9 @@
 }
 .quantity-group button:hover,
 .add-to-cart:hover {
-    background: #A5C926;
+    background: #FF9191;
     color: #fff;
-    box-shadow: 0 8px 8px -4px rgba(165, 201, 38, 0.5);
+    box-shadow: 0 8px 8px -4px #FF9191A8;
     transform: scale(1.05);
     transition: all 0.3s 0s ease-in-out;
 }
@@ -124,7 +124,7 @@
         .toys-line-header-color {
             width: 136px;
             height: 2px;
-            background-color: #a5c926;
+            background-color: #FF9191;
         }
     }
 }
@@ -134,41 +134,47 @@
     display: flex;
     justify-content: center;
 }
+.price {
+  font-size: 3vw;
+}
+.stock {
+  font-size: 1vw;
+}
 .product-section-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 140px;
-    .section-title {
-        font-family: 'Varela Round', sans-serif;
-        font-size: 28px;
-        line-height: 36px;
-        font-weight: 400;
-    }
-    .see-all-toys {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        border-bottom: 2px solid #ddd;
-        padding-bottom: 3px;
-        color: #111;
-        font-size: 13px;
-        line-height: 20px;
-        font-weight: 600;
-        text-decoration: none;
-    }
-    .see-all-toys:hover {
-        border-bottom: 2px solid #a5c926;
-    }
-    .toys-line-header {
-        width: 100%;
+}
+.section-title {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 400;
+}
+.see-all-toys {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 3px;
+    color: #111;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.see-all-toys:hover {
+    border-bottom: 2px solid #FF9191;
+}
+.toys-line-header {
+    width: 100%;
+    height: 2px;
+    background-color: #e5e5e5;
+    .toys-line-header-color {
+        width: 136px;
         height: 2px;
-        background-color: #e5e5e5;
-        .toys-line-header-color {
-            width: 136px;
-            height: 2px;
-            background-color: #a5c926;
-        }
+        background-color: #FF9191;
     }
 }
 .related-products {
@@ -185,54 +191,308 @@
     justify-content: space-between;
     align-items: center;
 }
-.product-list {
+.product-list-detail {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 50px;
     gap: 30px;
-    .product-card {
-        .product-title {
-            font-family: 'Varela Round', sans-serif;
-            font-size: 15px;
-            line-height: 20px;
-            font-weight: 400;
-        }
-        .product-cost {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 22px;
-            padding: 2px 12px;
-            border-radius: 16px;
-            background-color: #a5c926;
-            color: #fff;
-            font-size: 12px;
-        }
-        .product-card-content {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            align-items: center;
-            border-radius: 16px;
-            background-color: #fff;
-            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
-            padding: 24px 24px 32px;
-            transition: all 0.3s 0s ease-out;
-            cursor: pointer;
-            text-decoration: none;
-            color: black;
-        }
-        .product-card-content:hover {
-            box-shadow: 0 8px 20px -3px rgba(0, 0, 0, 0.1);
-            transform: scale(1.05);
-            transition: all 0.3s 0s ease-out;
-        }
-        .product-photo {
-            width: 182px;
-            height: 182px;
-            padding: 20px;
-            object-fit: cover;
-        }
-    }
+}
+
+.product-title {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.product-cost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 22px;
+    padding: 2px 12px;
+    border-radius: 16px;
+    background-color: #FF9191;
+    color: #fff;
+    font-size: 12px;
+}
+.product-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    padding: 24px 24px 32px;
+    transition: all 0.3s 0s ease-out;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.product-card-content:hover {
+    box-shadow: 0 8px 20px -3px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+    transition: all 0.3s 0s ease-out;
+}
+.product-photo {
+    width: 182px;
+    height: 182px;
+    padding: 20px;
+    object-fit: cover;
 }
 /* End product section */
+
+@media (max-width: 600px) {
+  .product-section-container {
+    padding: 0px;
+  }
+
+  #product-section-content {
+    gap: 15vw;
+    padding: 0 5vw;
+  }
+
+  .price {
+    font-size: 5vw;
+  }
+
+  .stock {
+    font-size: 3vw;
+  }
+
+  .related-products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .related-products-header-content {
+      align-items: center;
+      gap: 3vw;
+      width: 85vw;
+  }
+
+  .product-section-content .toys-line-header {
+    width: 85vw;
+  }
+
+  .related-products-header {
+    row-gap: 5vw;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .product-section-content .section-title{
+    font-size: 5vw;
+    line-height: 36px;
+  }
+
+  .product-section-content .see-all-toys {
+    font-size: 3vw;
+    gap: 2vw;
+  }
+
+  .see-all-toys-title {
+    font-size: 3vw;
+  }
+
+  .product-section-content .toys-line-header .toys-line-header-color {
+    width: 15vw;
+    height: 2px;
+  }
+
+  .product-list-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4vw;
+    gap: 5vw;
+  }
+
+  .product-card-content {
+    width: 100%;
+    gap: 2vw;
+    padding: 12px 12px 16px;
+    transition: all 0.3s 0s ease-out;
+  }
+
+  .product-photo {
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+  }
+
+  .product-title {
+    font-size: 2vw;
+  }
+
+  .product-cost {
+    font-size: 2vw;
+    padding: 1px 10px;
+  }
+
+  .product-card-detail {
+    width: 34vw;
+    object-fit: cover;
+  } 
+
+  .product-detail-content {
+    width: 90vw;
+    margin-bottom: 50px;
+  }
+ 
+  .card-product-detail-content {
+    flex-direction: column-reverse;
+  }
+
+  .card-product-detail {
+    padding: 5vw;
+  }
+
+  .product-info{
+    width: 100%;
+    margin-bottom: 30px;
+    gap: 3vw;
+    h2 {
+      font-size: 7vw;
+    }
+  }
+  .detail-content {
+    h3 {
+      font-size: 5vw;
+    }
+    p {
+      font-size: 4vw;
+    }
+  }
+
+}
+
+/* ---------------- TABLET: 601px–1024px ---------------- */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .product-section-container {
+    padding: 0px;
+  }
+
+  .price {
+    font-size: 5vw;
+  }
+
+  .stock {
+    font-size: 3vw;
+  }
+
+  #product-section-content {
+    gap: 15vw;
+    padding: 0 5vw;
+  }
+
+  .related-products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .related-products-header-content {
+    align-items: center;
+    gap: 3vw;
+    width: 85vw;
+  }
+
+  .product-section-content .toys-line-header {
+    width: 85vw;
+  }
+
+  .related-products-header {
+    row-gap: 5vw;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .product-section-content .section-title {
+    font-size: 5vw;
+    line-height: 36px;
+  }
+
+  .product-section-content .see-all-toys {
+    font-size: 3vw;
+    gap: 2vw;
+  }
+
+  .see-all-toys-title {
+    font-size: 3vw;
+  }
+
+  .product-section-content .toys-line-header .toys-line-header-color {
+    width: 15vw;
+    height: 2px;
+  }
+
+  .product-list-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4vw;
+    gap: 5vw;
+  }
+
+  .product-card-content {
+    width: 100%;
+    gap: 2vw;
+    padding: 12px 12px 16px;
+    transition: all 0.3s 0s ease-out;
+  }
+
+  .product-photo {
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+  }
+
+  .product-title {
+    font-size: 2vw;
+  }
+
+  .product-cost {
+    font-size: 2vw;
+    padding: 1px 10px;
+  }
+
+  .product-card-detail {
+    width: 34vw;
+    object-fit: cover;
+  }
+
+  .product-detail-content {
+    width: 90vw;
+    margin-bottom: 50px;
+  }
+
+  .card-product-detail-content {
+    flex-direction: column-reverse;
+  }
+
+  .card-product-detail {
+    padding: 5vw;
+  }
+
+  .product-info {
+    width: 100%;
+    margin-bottom: 30px;
+    gap: 3vw;
+    h2 {
+      font-size: 7vw;
+    }
+  }
+
+  .detail-content {
+    h3 {
+      font-size: 5vw;
+    }
+    p {
+      font-size: 3vw;
+    }
+  }
+}

@@ -52,7 +52,7 @@
     
 }
 .send-message-button {
-  background-color: #b5d42c;
+  background-color: #FF9191;
   padding: 12px 24px;
   color: white;
   font-weight: bold;
@@ -64,7 +64,7 @@
 }
 
 .send-message-button:hover {
-  background-color: #9fb926;
+  background-color: #FF9191;
 }
 
 textarea {
@@ -131,7 +131,110 @@ textarea::placeholder {
 }
 
 .contact-infor-icon i:hover {
-  color: #b5d42c;
+  color: #FF9191;
 }
 
 /* End map conatact section */
+
+/* ---------------- MOBILE: max-width 600px ---------------- */
+@media (max-width: 600px) {
+  .map-contact {
+    flex-direction: column;
+    width: 100%;
+    margin: 30px 0 60px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .may-contact-content {
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .message-contact-infor {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    width: 85%;
+  }
+
+  textarea {
+    width: 95%;
+  }
+
+  .map-conatact-container iframe {
+    width: 100%;
+    height: 250px;
+    border-radius: 0;
+  }
+
+  .contact-infor-layout {
+    width: 100%;
+    max-width: none;
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  .contact-infor-icon {
+    justify-content: center;
+  }
+
+  .message-contact-infor .tittle {
+    font-size: 20px;
+  }
+
+  .send-message-button {
+    width: 50%;
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+/* ---------------- TABLET & SMALL LAPTOP: 601px–1240px ---------------- */
+@media (min-width: 601px) and (max-width: 1240px) {
+  .map-contact {
+    flex-direction: column;
+    width: 95%;
+    margin: 40px auto 80px;
+    border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .may-contact-content {
+    padding: 40px;
+    gap: 50px;
+  }
+
+  .message-contact-infor {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    width: 85%;
+  }
+
+  textarea {
+    width: 95%;
+  }
+
+  .map-conatact-container iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .contact-infor-layout {
+    width: 100%;
+    max-width: none;
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .contact-infor-icon {
+    justify-content: flex-start;
+  }
+
+  .send-message-button {
+    width: 30%;
+    font-size: 15px;
+    padding: 14px;
+  }
+}

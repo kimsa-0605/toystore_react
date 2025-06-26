@@ -79,7 +79,7 @@ function ProductDetail() {
       </div>
 
       <div className="product-section-container">
-        <div className="product-section-content">
+        <div id='product-section-content' className="product-section-content">
           <div className="related-products">
             <div className="related-products-header">
               <div className="related-products-header-content">
@@ -93,10 +93,10 @@ function ProductDetail() {
                 <div className="toys-line-header-color"></div>
               </div>
             </div>
-            <div className="product-list">
+            <div className="product-list-detail">
               {relatedProducts.length > 0 ? (
                 relatedProducts.map((item) => (
-                  <div className="product-card" key={item.id}>
+                  <div className="product-card-detail" key={item.id}>
                     <Link to={`/product/${item.id}`} className="product-card-content">
                       <img
                         src={item.image_link}

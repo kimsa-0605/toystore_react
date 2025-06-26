@@ -31,9 +31,7 @@ const Footer = () => {
                       Created with love by <u>Kim Sa</u>
                   </div>
                   <div className="right-bottom-footer-content">
-                      <p>Powered by <u>Webflow</u></p>
-                      <p><u>Style Guide</u></p>
-                      <p><u>Licensing</u></p>
+                      <p>Joy in Every Toy - Playtime Done Right !</p>
                   </div>
               </div>
             </div>

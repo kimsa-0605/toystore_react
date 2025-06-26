@@ -32,7 +32,7 @@
 }
 .banner-title {
     margin-bottom: 16px;
-    color: #a5c926;
+    color: #FF9191;
     font-size: 13px;
     line-height: 16px;
     font-weight: 600;
@@ -49,7 +49,7 @@
 .w-button {
     padding: 15px 28px;
     border-radius: 24px;
-    background-color: #a5c926;
+    background-color: #FF9191;
     color: #fff;
     font-size: 14px;
     line-height: 24px;
@@ -61,7 +61,7 @@
     transition: all 0.3s ease-in-out;
 }
 .w-button:hover {
-    box-shadow: 0 8px 8px -4px rgba(165, 201, 38, 0.5);
+    box-shadow: 0 8px 8px -4px #FF9191A8;
     transform: scale(1.05);
 }
 .banner-case-mouse {
@@ -234,7 +234,7 @@
     text-decoration: none;
 }
 .product-section-content .see-all-toys:hover {
-    border-bottom: 2px solid #a5c926;
+    border-bottom: 2px solid #FF9191;
 }
 .product-section-content .toys-line-header {
     width: 100%;
@@ -244,7 +244,7 @@
 .product-section-content .toys-line-header .toys-line-header-color-home {
     width: 136px;
     height: 2px;
-    background-color: #a5c926;
+    background-color: #FF9191;
 }
 .wood-crafted-toys, .stuffed-animal-toys {
     width: 1175px;
@@ -260,30 +260,31 @@
     justify-content: space-between;
     align-items: center;
 }
-.product-list {
+.product-list-home {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 50px;
     gap: 30px;
 }
-.product-list .product-card .product-title {
+.product-title {
     font-family: 'Varela Round', sans-serif;
     font-size: 15px;
     line-height: 20px;
     font-weight: 400;
+    color: #000;
 }
-.product-list .product-card .product-cost {
+.product-cost {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 22px;
     padding: 2px 12px;
     border-radius: 16px;
-    background-color: #a5c926;
+    background-color: #FF9191;
     color: #fff;
     font-size: 12px;
 }
-.product-list .product-card .product-card-content {
+.product-card-content {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -295,12 +296,12 @@
     transition: all 0.3s 0s ease-out;
     cursor: pointer;
 }
-.product-list .product-card .product-card-content:hover {
+.product-card-content:hover {
     box-shadow: 0 8px 20px -3px rgba(0, 0, 0, 0.1);
     transform: scale(1.05);
     transition: all 0.3s 0s ease-out;
 }
-.product-list .product-card .product-photo {
+.product-photo {
     width: 182px;
     height: 182px;
     padding: 20px;
@@ -309,7 +310,7 @@
 /* End product section */
 
 /* ---------------- MOBILE: max-width 768px ---------------- */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .banner-blog {
     width: 300px;
     padding: 20px;
@@ -436,120 +437,198 @@
     width: 15vw;
     height: 2px;
   }
-/* ---------------------------------------------------- */
-  .product-list {
+
+  .product-list-home {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 50px;
-    gap: 15px;
+    margin-top: 4vw;
+    gap: 5vw;
   }
 
-  /* .product-card-content {
+  .product-card-content {
     width: 100%;
-  } */
+    gap: 6px;
+    padding: 12px 12px 16px;
+    transition: all 0.3s 0s ease-out;
+  }
 
   .product-photo {
     width: 15vw;
     height: 15vw;
-    padding: 5px;
     object-fit: cover;
   }
 
   .product-title {
-    font-size: 13px;
+    font-size: 7px;
   }
 
   .product-cost {
-    font-size: 10px;
-    padding: 4px 10px;
+    font-size: 7px;
+    padding: 1px 10px;
   }
 
-  .product-list .product-card {
-    width: 91px;
-    height: 91px;
-    padding: 20px;
+  .product-card-home {
+    width: 34vw;
     object-fit: cover;
   } 
 }
 
 /* ---------------- TABLET: 601px–1024px ---------------- */
-/* @media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1024px) {
   .banner-blog {
-    width: 400px;
-    padding: 30px;
-    margin-top: 80px;
+    width: 300px;
+    padding: 20px;
+    margin-top: 60px;
+    align-items: center;
+    text-align: center;
+    width: 75vw;
+    max-width: 75vw;
   }
 
   .banner-title {
-    font-size: 10px;
+    font-size: 7px;
+    line-height: 9px;
+    margin-bottom: 6px;
   }
 
   .banner-h1-title {
-    font-size: 30px;
-    line-height: 38px;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
   }
 
   .w-button {
-    padding: 12px 24px;
-    font-size: 13px;
+    padding: 7px 14px;
+    font-size: 10px;
+    border-radius: 12px;
   }
 
   .toy-category-content {
     flex-direction: column;
-    gap: 30px;
-  }
-
-  .category-stuffed-animals,
-  .category-wooden-toys {
-    flex-direction: column;
-    width: 90%;
+    align-items: center;
+    padding: 20px;
     gap: 20px;
-    padding: 16px;
-    align-items: center;
   }
 
-  .category-stuffed-animals .category-blog,
-  .category-wooden-toys .category-blog {
-    margin: 0;
-    align-items: center;
-    text-align: center;
-  }
+.toy-category-content {
+    display: flex;
+    justify-content: center;
+    width: 1175px;
+    position: relative;
+    padding: 60px;
+    gap: 40px;
+}
 
-  .category-stuffed-animals img,
-  .category-wooden-toys img {
-    display: none;
-  }
+.category-stuffed-animals img,
+.category-wooden-toys img {
+    position: absolute;
+    top: 0;
+    width: 27vw;
+    height: 27vw;
+}
+
+.category-wooden-toys .category-blog {
+    margin-right: 45vw;
+}
+
+.category-stuffed-animals .category-blog {
+    margin-left: 45vw;
+}
 
   .category-title {
-    font-size: 20px;
-  }
-
-  .category-shop-now-btn {
-    font-size: 12px;
-  }
-
-  .product-section-content {
-    gap: 100px;
-    padding: 0 30px;
-  }
-
-  .product-list {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-
-  .product-photo {
-    width: 160px;
-    height: 160px;
-    padding: 15px;
-  }
-
-  .product-title {
     font-size: 14px;
   }
 
-  .product-cost {
-    font-size: 11px;
-    padding: 6px 12px;
+  .category-shop-now-btn {
+    font-size: 10px;
+    padding: 6px 10px;
+    border-radius: 14px;
   }
-} */
+
+  .product-section-home-container {
+    padding: 0px;
+  }
+
+  #product-section-content {
+    gap: 15vw;
+    padding: 0 5vw;
+  }
+
+  .stuffed-animal-toys,
+  .wood-crafted-toys {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stuffed-animal-toys-header-content, .wood-crafted-toys-header-content {
+    align-items: center;
+    gap: 10px;
+    width: 85vw;
+  }
+
+  .product-section-content .toys-line-header {
+    width: 85vw;
+  }
+
+  .stuffed-animal-toys-header, .wood-crafted-toys-header {
+    row-gap: 20px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .product-section-content .section-title-home {
+    font-size: 3vw;
+    line-height: 36px;
+  }
+
+  .product-section-content .see-all-toys {
+    font-size: 2vw;
+    gap: 6px;
+  }
+
+  .see-all-toys-title {
+    font-size: 2vw;
+  }
+
+  .product-section-content .toys-line-header .toys-line-header-color-home {
+    width: 15vw;
+    height: 2px;
+  }
+
+  .product-list-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 4vw;
+    gap: 4vw;
+  }
+
+  .product-card-content {
+    width: 100%;
+    gap: 6px;
+    padding: 12px 12px 16px;
+    transition: all 0.3s 0s ease-out;
+  }
+
+  .product-photo {
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+  }
+
+  .product-title {
+    font-size: 7px;
+  }
+
+  .product-cost {
+    font-size: 7px;
+    padding: 1px 10px;
+  }
+
+  .product-card-home {
+    width: 23vw;
+    object-fit: cover;
+  }
+}

@@ -19,7 +19,7 @@ const InstagramSection = () => {
                     <p className="instagram-contact-bottom-title">We're on Instagram!</p>
                 </div>
                 <div className="instagram-contact-photo">
-                    <div className="instagram-contact-photo-content">
+                    <div className="instagram-contact-photo-content" data-aos="zoom-in" data-aos-duration="1000">
                         {imageUrls.map((url, index) => (
                             <a href="#" key={index}>
                                 <img src={url} alt={`Instagram ${index + 1}`} />

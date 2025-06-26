@@ -11,8 +11,8 @@ const Header = () => {
         <div className="header-contact">
           <div className="header-contact-content">
             <div className="header-contact-phonenumber-email">
-              <span className="header-contact-phonenumber">Call Us: +1 213 974-5898</span>
-              <span className="header-contact-email">Email: <u>toystore@template.com</u></span>
+              <span className="header-contact-phonenumber">Call Us: +84 877152961</span>
+              <span className="header-contact-email">Email: <u>toystore@gmail.com</u></span>
             </div>
             <div className="header-contact-icons">
               <i className="fa-brands fa-twitter"></i>

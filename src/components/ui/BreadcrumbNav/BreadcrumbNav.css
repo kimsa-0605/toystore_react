@@ -22,3 +22,17 @@
     }
 }
 /* End breadcrumb navigation */
+
+/* ---------------- MOBILE: max-width 600px ---------------- */
+@media (max-width: 600px) {
+  .breadcrumb-nav-content {
+    width: 95vw;
+  }
+}
+
+/* ---------------- TABLET: 601px–1024px ---------------- */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .breadcrumb-nav-content {
+        width: 95vw;
+    }
+}

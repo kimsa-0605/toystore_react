@@ -32,7 +32,7 @@ const Home = () => {
             className="banner-content"
             style={{ backgroundImage: `url(${Banner})` }}
           >
-            <div className="banner-blog">
+            <div className="banner-blog" data-aos="zoom-in" data-aos-duration="1000">
               <div className="banner-blog-content">
                 <div className="banner-title">Say Hello to ToyStore!</div>
                 <h1 className="banner-h1-title">
@@ -55,7 +55,7 @@ const Home = () => {
 
         <div id="toy-category-container" className="toy-category-container">
           <div className="toy-category-content">
-            <div className="category-stuffed-animals">
+            <div className="category-stuffed-animals" data-aos="zoom-in" data-aos-duration="1000">
               <img src={StuffedImg} alt="Stuffed Animals" />
               <div className="category-blog">
                 <h3 className="category-title">Stuffed Animals</h3>
@@ -64,7 +64,7 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-            <div className="category-wooden-toys">
+            <div className="category-wooden-toys" data-aos="zoom-in" data-aos-duration="1000">
               <div className="category-blog">
                 <h3 className="category-title">Wooden Toys</h3>
                 <Link to="/catalog" className="category-shop-now-btn">
@@ -92,10 +92,10 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="product-list">
+              <div className="product-list-home">
                 {stuffedAnimals.map(product => (
                   <Link to={`/product/${product.id}`} key={product.id} className="product-card-link">
-                    <div className="product-card-home">
+                    <div className="product-card-home" data-aos="zoom-in" data-aos-duration="1000">
                       <div className="product-card-content">
                         <img
                           src={product.image_link}
@@ -111,7 +111,7 @@ const Home = () => {
               </div>
             </div>
 
-            {/* <div className="wood-crafted-toys">
+            <div className="wood-crafted-toys">
               <div className="wood-crafted-toys-header">
                 <div className="wood-crafted-toys-header-content">
                   <span className="section-title-home">Wooden Toys</span>
@@ -125,10 +125,10 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="product-list">
+              <div className="product-list-home">
                 {woodenToys.map(product => (
                   <Link to={`/product/${product.id}`} key={product.id} className="product-card-link">
-                    <div className="product-card">
+                    <div className="product-card-home" data-aos="zoom-in" data-aos-duration="1000">
                       <div className="product-card-content">
                         <img
                           src={product.image_link}
@@ -142,14 +142,14 @@ const Home = () => {
                   </Link>
                 ))}
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
 
-        {/* <VideoSection />
+        <VideoSection />
         <EcommerceTemplate title="Available for FREE!" textBtn="Get It Now" />
         <SubscribeSection />
-        <InstagramSection /> */}
+        <InstagramSection />
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import './SubscribeSection.css';
 const SubscribeSection = () => {
     return (
         <div id="contact-container" class="contact-container">
-            <div id="contact-container" className="contact-content">
+            <div id="contact-container" className="contact-content" data-aos="zoom-in" data-aos-duration="1000">
                 <div className="contact-left-content">
                     <div className="fly-button">
                         <img

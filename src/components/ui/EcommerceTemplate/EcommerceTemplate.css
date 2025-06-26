@@ -21,7 +21,7 @@
     .made-for-webflow-title {
         font-size: 13px;
         font-weight: 600;
-        color: #a5c926;
+        color: #FF9191;
     }
     .free-marketing-title {
         font-family: 'Varela Round', sans-serif;
@@ -47,7 +47,7 @@
     .line-free-marketing {
         width: 70px;
         height: 2px;
-        background-color: #a5c926;
+        background-color: #FF9191;
     }
     .free-marketing-text {
         color: #999;
@@ -61,7 +61,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 24px;
-        background-color: #a5c926;
+        background-color: #FF9191;
         color: #fff;
         font-size: 14px;
         font-weight: 600;
@@ -70,7 +70,7 @@
         cursor: pointer;
     }
     .button-available-for-free:hover {
-        box-shadow: 0 8px 8px -4px rgba(165, 201, 38, 0.5);
+        box-shadow: 0 8px 8px -4px #FF9191A8;
         transform: scale(1.05);
         transition: all 0.3s 0s ease-in-out;
     }
@@ -81,3 +81,70 @@
     border-radius: 16px;
 }
 /* End free-marketing-blog */
+
+/* ---------------- MOBILE: max-width 768px ---------------- */
+@media (max-width: 600px) {
+  .free-marketing-content {
+    width: 90%;
+    gap: 40px;
+  }
+
+  .available-for-free {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10vw;
+  }
+
+  .available-for-free-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .available-for-free-title,
+  .free-marketing-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .free-marketing-text {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .free-marketing-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .button-available-for-free {
+    width: 100%;
+    max-width: 280px;
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+}
+
+/* ---------------- TABLET: 601px–1024px ---------------- */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .free-marketing-content {
+    width: 95%;
+    gap: 60px;
+  }
+
+  .available-for-free {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10vw;
+  }
+
+  .available-for-free-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .free-marketing-photo {
+    width: 90vw;
+    height: auto;
+  }
+}

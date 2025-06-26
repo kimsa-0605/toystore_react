@@ -51,6 +51,7 @@ function About() {
                 className="position-design-photo"
                 src="https://assets.website-files.com/5badda2935e11303a89a461e/5bb5c77f0b5b7843138dc3c3_side-image-02-p-1080.jpeg"
                 alt="Responsive Design"
+                data-aos="zoom-in" data-aos-duration="1000"
               />
               <div className="available-for-free-content">
                 <p className="available-for-free-title">100% Responsive</p>
